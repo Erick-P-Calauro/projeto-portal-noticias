@@ -47,8 +47,7 @@ main#destaques .container .destaque :has(h1) {
     padding: 24px;
 }
 
-section#mais-lidas {
-    
+section, main {
     padding-bottom: 80px;
 
     header {
@@ -61,6 +60,9 @@ section#mais-lidas {
         padding-block: 12px;
         margin-bottom: 12px;
     }
+}
+
+section#mais-lidas {
 
     .cards {
         display: grid;
@@ -88,4 +90,72 @@ section#mais-lidas {
             }
         }
     }
+}
+
+section#noticias {
+    
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    column-gap: 32px;
+
+    #destaques-ia {
+        
+        article {
+            display: flex;
+            gap: 16px;
+
+            img {
+                max-width: 176px;
+                max-height: 176px;
+
+                border-radius: 4px;
+            }
+
+            h2 {
+                margin-block: 8px 4px;
+            }
+
+            .card-left {
+                display: grid;
+            }
+        }
+
+        .cards {
+            display: grid;
+            gap: 32px;
+        }
+
+    }
+
+    & div > img {
+        max-width: 100%;
+        object-fit: cover;
+
+        margin-bottom : 32px;
+    }
+
+    #destaques-gerais {
+        
+        .cards {
+            display: grid;
+            gap:32px;
+            
+            .card {
+                display: flex;
+                gap: 16px;
+
+                img {
+                    max-width: 72px;
+                    max-height: 72px;
+                    border-radius: 4px;
+                }
+
+                .card-right p {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+    }
+
 }
