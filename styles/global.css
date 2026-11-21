@@ -35,6 +35,27 @@ body {
     margin-inline: auto;
 }
 
+.content-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+    background-color: var(--brand-color-dark);
+    padding: 4px 8px;
+
+    text-transform: uppercase;
+
+    border-radius: 4px;
+
+    box-shadow: 0px 4px 16px #02061740;
+}
+
+.content-tag span {
+    font: 500 10px/1.2 var(--font-family);
+    letter-spacing: 4%;
+}
+
 h1 {
     font: var(--headline1);
 }
