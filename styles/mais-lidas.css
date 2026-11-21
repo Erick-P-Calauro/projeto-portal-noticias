@@ -1,0 +1,70 @@
+#mais-lidas {
+    
+    padding-bottom: 80px;
+
+    .container {
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-top: 1px solid var(--stroke-color);
+
+            padding-block: 12px;
+            margin-bottom: 12px;
+        }
+
+        .cards {
+            display: grid;
+            grid-auto-flow: column;
+            
+            gap: 16px;
+            max-width: 100%;
+
+            .card {
+                position: relative;
+                inset: 0;
+
+                .content-tag {
+                    position: absolute;
+                    margin: 8px;
+                }
+
+                img {
+                    border-radius: 4px;
+                    
+                    height: 160px;
+                    object-fit: cover;
+
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    a.see-more {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        & :nth-child(3) {
+            display: none;
+        }
+
+        &:hover {
+            & :nth-child(2) {
+                display: none;
+            }
+
+            & :nth-child(3) {
+                display: inline;
+            }
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

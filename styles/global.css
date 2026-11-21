@@ -53,6 +53,7 @@ body {
 
 .content-tag span {
     font: 500 10px/1.2 var(--font-family);
+    color: var(--text-color-primary);
     letter-spacing: 4%;
 }
 
@@ -70,6 +71,7 @@ h3 {
 
 span {
     font: var(--span);
+    color: var(--text-color-secondary);
 }
 
 a {
@@ -77,6 +79,31 @@ a {
     color: inherit;
 }
 
-a:hover {
+a:hover span {
     color: var(--brand-color-light);
+}
+
+a.see-more {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    & :nth-child(3) {
+        display: none;
+    }
+
+    &:hover {
+        & :nth-child(2) {
+            display: none;
+        }
+
+        & :nth-child(3) {
+            display: inline;
+        }
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
 }

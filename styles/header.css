@@ -31,11 +31,3 @@ header nav#navbar-secondary {
 
     padding-block: 14px;
 }
-
-header nav#navbar-secondary a {
-    color: var(--text-color-secondary);
-}
-
-header nav#navbar-secondary a:hover {
-    color: var(--brand-color-light);
-}
