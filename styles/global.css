@@ -25,6 +25,8 @@
 
 body {
     font: var(--paragraph);
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
 }
 
 h1 {
@@ -41,4 +43,13 @@ h3 {
 
 span {
     font: var(--span);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--brand-color-light);
 }
