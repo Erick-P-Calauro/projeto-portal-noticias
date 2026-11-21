@@ -1,17 +1,15 @@
-#destaques {
-    .container {
-        display: grid;
+main#destaques {
+    display: grid;
     
-        gap: 16px;
+    gap: 16px;
 
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 200px 200px;
-        grid-template-areas: 
-        "A A B C"
-        "A A D E";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "A A B C"
+    "A A D E";
 
-        padding-block: 40px 80px;
-    }
+    padding-block: 40px 80px;
 
     .destaque {
         position: relative;
@@ -45,51 +43,48 @@
     }
 }
 
-#destaques .container .destaque :has(h1) {
+main#destaques .container .destaque :has(h1) {
     padding: 24px;
 }
 
-#mais-lidas {
+section#mais-lidas {
     
     padding-bottom: 80px;
 
-    .container {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-top: 1px solid var(--stroke-color);
+
+        padding-block: 12px;
+        margin-bottom: 12px;
+    }
+
+    .cards {
+        display: grid;
+        grid-auto-flow: column;
         
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        gap: 16px;
+        max-width: 100%;
 
-            border-top: 1px solid var(--stroke-color);
+        .card {
+            position: relative;
+            inset: 0;
 
-            padding-block: 12px;
-            margin-bottom: 12px;
-        }
+            .content-tag {
+                position: absolute;
+                margin: 8px;
+            }
 
-        .cards {
-            display: grid;
-            grid-auto-flow: column;
-            
-            gap: 16px;
-            max-width: 100%;
+            img {
+                border-radius: 4px;
+                
+                height: 160px;
+                object-fit: cover;
 
-            .card {
-                position: relative;
-                inset: 0;
-
-                .content-tag {
-                    position: absolute;
-                    margin: 8px;
-                }
-
-                img {
-                    border-radius: 4px;
-                    
-                    height: 160px;
-                    object-fit: cover;
-
-                    margin-bottom: 8px;
-                }
+                margin-bottom: 8px;
             }
         }
     }
