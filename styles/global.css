@@ -49,12 +49,12 @@ body {
     border-radius: 4px;
 
     box-shadow: 0px 4px 16px #02061740;
-}
 
-.content-tag span {
-    font: 500 10px/1.2 var(--font-family);
-    color: var(--text-color-primary);
-    letter-spacing: 4%;
+    span {
+        font: 500 10px/1.2 var(--font-family);
+        color: var(--text-color-primary);
+        letter-spacing: 4%;
+    }
 }
 
 h1 {
