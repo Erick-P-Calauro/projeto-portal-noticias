@@ -15,6 +15,12 @@ main#destaques {
         position: relative;
         border-radius: 4px;
 
+        &:has(h1) {
+            .destaque-content {
+                padding: 24px;
+            }
+        }
+
         img {
             border-radius: 4px;
     
@@ -41,10 +47,6 @@ main#destaques {
             }
         }
     }
-}
-
-main#destaques .container .destaque :has(h1) {
-    padding: 24px;
 }
 
 section, main {
